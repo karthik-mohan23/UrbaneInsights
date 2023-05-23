@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UrbaneInsights</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>       
+    <div class="sign-up-container">
+      <div class="sign-up-headlines">
+        <h1>EXPERIENCE THE BLOGOSPHERE: JOIN OUR PLATFORM AND FUEL YOUR MIND!</h1>
+        <h5>Stay ahead of the curve: Sign up to receive our biggest stories, delivered to your inbox every day.</h5>
+      </div>
+
+      <!-- form -->
+      <div class="form-container">
+        <form id="form" action="./success.html">
+          <!-- User name -->
+          <div class="form-section">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Full Name"  required onkeyup="validateName()"  />
+          </div>
+          <!-- Email address -->
+          <div class="form-section">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="email@adress.com"  required onkeyup="validateEmail()" />
+           
+          </div>
+          <!-- Password -->
+          <div class="form-section">
+            <label for="password1">Password</label>
+            <input type="password" id="password1" placeholder="password" required onkeyup="validatePassword()" />
+           
+          </div>
+          <!-- confirm password  -->
+          <div class="form-section">
+            <label for="password2">Confirm password</label>
+            <input
+              type="password"
+              id="password2"
+              placeholder="confirm password" required onkeyup="validateConfirmPassword()" />
+           
+          </div>
+          <button type="submit" onclick="return validateForm()" class="sign-up-btn">Sign up</button>
+          <div class="message-container">
+            <h3 id="message" class="error-msg"></h3>
+          </div>
+          <div class="sign-in">
+            <small>Already a member?<a href="./success.html" class="sign-in-a"> Sign in</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- js -->
+    <script src="script.js"></script>
+  </body>
+</html>
