@@ -193,7 +193,11 @@ p.text-white {
   font-size: 18px;
   font-weight: 600;
 }
-
+@media screen and (max-width: 772px) {
+  .more-a {
+    margin-bottom: 1rem;
+  }
+}
 /* latest */
 .latest {
   max-width: 992px;
@@ -214,6 +218,9 @@ p.text-white {
   .img-box {
     margin-bottom: 0;
   }
+}
+.texts h4 {
+  margin-bottom: 1rem;
 }
 .latest-para {
   font-weight: 400;
