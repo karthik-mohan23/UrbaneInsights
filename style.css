@@ -92,8 +92,6 @@ a {
 }
 .navbar-bg {
   background-color: black;
-  /* padding-block: 1rem;
-  font-size: 1.1rem; */
 }
 .background-img {
   background: linear-gradient(rgb(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -111,41 +109,21 @@ a {
   width: 90%;
   border-radius: 8px;
   position: absolute;
-  top: 42%;
+  bottom: -6rem;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   padding: 20px;
   background-color: rgb(219, 241, 253);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-@media screen and (min-width: 576px) {
-  .absolute {
-    top: 44%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .absolute {
-    top: 50%;
-  }
-}
-@media screen and (min-width: 992px) {
-  .absolute {
-    top: 53%;
-  }
-}
-@media screen and (min-width: 1170px) {
-  .absolute {
-    top: 55%;
-  }
-}
+
 .left-align {
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 1px;
   margin: 0;
-  margin-bottom: 0.5rem;
 }
 .heading {
   font-size: 2.2rem;
@@ -170,9 +148,14 @@ a {
 
 .main-box {
   border: none;
-  border-right: 2px solid #3567fe;
-}
 
+  margin-bottom: 0.5rem;
+}
+@media screen and (min-width: 772px) {
+  .main-box {
+    border-right: 2px solid #3567fe;
+  }
+}
 h4.text-white {
   margin-bottom: 20px;
 }
