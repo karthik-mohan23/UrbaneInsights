@@ -148,7 +148,6 @@ a {
 
 .main-box {
   border: none;
-
   margin-bottom: 0.5rem;
 }
 @media screen and (min-width: 772px) {
@@ -193,11 +192,7 @@ p.text-white {
   font-size: 18px;
   font-weight: 600;
 }
-@media screen and (max-width: 772px) {
-  .more-a {
-    margin-bottom: 1rem;
-  }
-}
+
 /* latest */
 .latest {
   max-width: 992px;
